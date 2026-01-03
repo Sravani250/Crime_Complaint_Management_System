@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Complaint</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h2>Register Complaint</h2>
+
+<form method="post" onsubmit="return validateForm()">
+    <input type="text" id="title" name="title" placeholder="Complaint Title"><br>
+
+    <select name="category">
+        <option>Theft</option>
+        <option>Harassment</option>
+        <option>Cyber Crime</option>
+        <option>Accident</option>
+    </select><br>
+
+    <textarea id="desc" name="description" placeholder="Complaint Description"></textarea><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="/static/validation.js"></script>
+</body>
+</html>
